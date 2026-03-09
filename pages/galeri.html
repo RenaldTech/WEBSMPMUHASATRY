@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri - SMP Muhammadiyah (Tahfidz) Salatiga</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="navbar-container">
+            <a href="../index.php" class="navbar-brand">
+                <span><img src="assets/images/logo.png" alt="Logo SMP Muhammadiyah"></span>
+                <span>SMP Muhammadiyah<br>(Tahfidz) Salatiga</span>
+            </a>
+            <button class="nav-toggle">☰</button>
+            <ul class="navbar-menu">
+                <li><a href="../index.php">Beranda</a></li>
+                <li><a href="../akademik.php">Akademik</a></li>
+                <li><a href="../berita.php">Berita</a></li>
+                <li><a href="../spmb.php">SPMB</a></li>
+                <li><a href="../galeri.php" class="active">Galeri</a></li>
+                <li><a href="../kontak.php">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Galeri Kegiatan</h1>
+            <p>Dokumentasi foto dan video aktivitas sekolah</p>
+        </div>
+    </section>
+
+    <!-- GALLERY FILTER & DISPLAY -->
+    <section class="section">
+        <h2 class="section-title">Koleksi Galeri</h2>
+        
+        <div class="gallery-filter">
+            <button class="filter-btn active" onclick="filterGallery('all')">Semua</button>
+            <button class="filter-btn" onclick="filterGallery('akademik')">Akademik</button>
+            <button class="filter-btn" onclick="filterGallery('keagamaan')">Keagamaan</button>
+            <button class="filter-btn" onclick="filterGallery('olahraga')">Olahraga</button>
+            <button class="filter-btn" onclick="filterGallery('ekstrakurikuler')">Ekstrakurikuler</button>
+        </div>
+
+        <div id="galleryContainer" class="gallery">
+            <!-- Akademik -->
+            <div class="gallery-item" data-category="akademik">
+                <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect fill='%230052CC' width='400' height='300'/><text x='50%' y='50%' font-size='24' fill='white' text-anchor='middle' dominant-baseline='middle'>Pembelajaran Kelas</text></svg>" 
+                     alt="Pembelajaran Kelas">
+                <div class="gallery-overlay">
+                    <span class="play-icon">🖼️</span>
+                </div>
+            </div>
+
+            <!-- Akademik -->
+            <div class="gallery-item" data-category="akademik">
+                <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect fill='%233B82F6' width='400' height='300'/><text x='50%' y='50%' font-size='24' fill='white' text-anchor='middle' dominant-baseline='middle'>Ujian Sekolah</text></svg>" 
+                     alt="Ujian Sekolah">
+                <div class="gallery-overlay">
+                    <span class="play-icon">🖼️</span>
+                </div>
+            </div>
+
+            <!-- Keagamaan -->
+            <div class="gallery-item" data-category="keagamaan">
+                <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect fill='%2310B981' width='400' height='300'/><text x='50%' y='50%' font-size='24' fill='white' text-anchor='middle' dominant-baseline='middle'>Sholat Berjama'ah</text></svg>" 
+                     alt="Sholat Berjama'ah">
+                <div class="gallery-overlay">
+                    <span class="play-icon">🖼️</span>
+                </div>
+            </div>
+
+            <!-- Keagamaan -->
+            <div class="gallery-item" data-category="keagamaan">
+                <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect fill='%2359D5FD' width='400' height='300'/><text x='50%' y='50%' font-size='24' fill='white' text-anchor='middle' dominant-baseline='middle'>Hafalan Al-Qur'an</text></svg>" 
+                     alt="Hafalan Al-Qur'an">
+                <div class="gallery-overlay">
+                    <span class="play-icon">🖼️</span>
+                </div>
+            </div>
+
+            <!-- Olahraga -->
+            <div class="gallery-item" data-category="olahraga">
+                <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect fill='%23F59E0B' width='400' height='300'/><text x='50%' y='50%' font-size='24' fill='white' text-anchor='middle' dominant-baseline='middle'>Olahraga Sepak Bola</text></svg>" 
+                     alt="Sepak Bola">
+                <div class="gallery-overlay">
+                    <span class="play-icon">🖼️</span>
+                </div>
+            </div>
+
+            <!-- Olahraga -->
+            <div class="gallery-item" data-category="olahraga">
+                <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect fill='%23EF4444' width='400' height='300'/><text x='50%' y='50%' font-size='24' fill='white' text-anchor='middle' dominant-baseline='middle'>Pertandingan Voli</text></svg>" 
+                     alt="Pertandingan Voli">
+                <div class="gallery-overlay">
+                    <span class="play-icon">🖼️</span>
+                </div>
+            </div>
+
+            <!-- Ekstrakurikuler -->
+            <div class="gallery-item" data-category="ekstrakurikuler">
+                <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect fill='%238B5CF6' width='400' height='300'/><text x='50%' y='50%' font-size='24' fill='white' text-anchor='middle' dominant-baseline='middle'>Seni Musik</text></svg>" 
+                     alt="Seni Musik">
+                <div class="gallery-overlay">
+                    <span class="play-icon">🖼️</span>
+                </div>
+            </div>
+
+            <!-- Ekstrakurikuler -->
+            <div class="gallery-item" data-category="ekstrakurikuler">
+                <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect fill='%23EC4899' width='400' height='300'/><text x='50%' y='50%' font-size='24' fill='white' text-anchor='middle' dominant-baseline='middle'>Seni Tari</text></svg>" 
+                     alt="Seni Tari">
+                <div class="gallery-overlay">
+                    <span class="play-icon">🖼️</span>
+                </div>
+            </div>
+
+            <!-- Akademik -->
+            <div class="gallery-item" data-category="akademik">
+                <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect fill='%2306B6D4' width='400' height='300'/><text x='50%' y='50%' font-size='24' fill='white' text-anchor='middle' dominant-baseline='middle'>Laboratorium IPA</text></svg>" 
+                     alt="Laboratorium IPA">
+                <div class="gallery-overlay">
+                    <span class="play-icon">🖼️</span>
+                </div>
+            </div>
+
+            <!-- Keagamaan -->
+            <div class="gallery-item" data-category="keagamaan">
+                <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect fill='%2314B8A6' width='400' height='300'/><text x='50%' y='50%' font-size='24' fill='white' text-anchor='middle' dominant-baseline='middle'>Darut Taqwa Camp</text></svg>" 
+                     alt="Darut Taqwa Camp">
+                <div class="gallery-overlay">
+                    <span class="play-icon">🖼️</span>
+                </div>
+            </div>
+
+            <!-- Ekstrakurikuler -->
+            <div class="gallery-item" data-category="ekstrakurikuler">
+                <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect fill='%236366F1' width='400' height='300'/><text x='50%' y='50%' font-size='24' fill='white' text-anchor='middle' dominant-baseline='middle'>Pencak Silat</text></svg>" 
+                     alt="Pencak Silat">
+                <div class="gallery-overlay">
+                    <span class="play-icon">🖼️</span>
+                </div>
+            </div>
+
+            <!-- Akademik -->
+            <div class="gallery-item" data-category="akademik">
+                <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect fill='%237C3AED' width='400' height='300'/><text x='50%' y='50%' font-size='24' fill='white' text-anchor='middle' dominant-baseline='middle'>Acara Sekolah</text></svg>" 
+                     alt="Acara Sekolah">
+                <div class="gallery-overlay">
+                    <span class="play-icon">🖼️</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INFO GALERI -->
+    <section class="section" style="background-color: #f9fafb;">
+        <h2 class="section-title">Informasi Galeri</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-header">
+                    <h3>📸 Pengertian Galeri</h3>
+                </div>
+                <div class="card-body">
+                    <p>
+                        Galeri adalah kumpulan dokumentasi foto dan video yang menayangkan berbagai 
+                        aktivitas sekolah, baik akademik maupun non-akademik. Galeri bertujuan memberikan 
+                        gambaran nyata tentang kehidupan sekolah kepada masyarakat.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h3>🎯 Jenis Kegiatan</h3>
+                </div>
+                <div class="card-body">
+                    <ul style="list-style-position: inside; color: var(--text-dark); line-height: 2;">
+                        <li>Kegiatan Akademik</li>
+                        <li>Kegiatan Keagamaan</li>
+                        <li>Kegiatan Olahraga</li>
+                        <li>Kegiatan Ekstrakurikuler</li>
+                        <li>Peringatan Hari Besar</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h3>📹 Bagaimana Berbagi</h3>
+                </div>
+                <div class="card-body">
+                    <p>
+                        Jika Anda memiliki foto atau video kegiatan sekolah yang ingin dibagikan, 
+                        silakan hubungi bagian HUMAS sekolah melalui:
+                    </p>
+                    <p style="margin-top: 1rem; color: var(--text-light); font-size: 0.9rem;">
+                        📧 humas@smpmuhammadiyah-salatiga.sch.id<br>
+                        📞 0298 322441
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+       
+    </style>
+</head>
+<body>
+      <!-- FOOTER -->
+   <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                    <span style="font-size: 2.5rem;"><img src="../assets/images/logo.png" alt="Logo SMP Muhammadiyah"></span>
+                    <div style="font-weight: 700; font-size: 0.95rem;">SMP Muhammadiyah<br>(Tahfidz) Salatiga</div>
+                </div>
+                <p>Jl. Cempaka No.5-7, Jetis, Kecamatan Sidorejo, Kota Salatiga, Jawa Tengah 50711.</p>
+                <p style="margin-top: 1.5rem; font-weight: 600;">Follow us on:</p>
+                <div class="social-links">
+                    <a href="https://facebook.com/smpmuhsltg" target="_blank" title="Facebook"><img src="../assets/images/facebook.jpg" alt="facebook"></a>
+                    <a href="https://instagram.com/smpmuhammadiyahsalatiga" target="_blank" title="Instagram"><img src="../assets/images/instagram.jpg" alt="instagram"></a>
+                    <a href="https://www.tiktok.com/@smpmuhammadiyahsalatiga?_r=1&_t=ZS-94X5cuzHFEi" target="_blank" title="TikTok"><img src="../assets/images/tiktok.jpg" alt="tiktok"></a>
+                    <a href="https://youtube.com/@smpmuhammadiyahcempakasala5600?si=3yFSB49Kmfa4EqqA" target="_blank" title="YouTube"><img src="../assets/images/youtube.jpg" alt="youtube"></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="../galeri.php">Home</a>
+                <a href="../galeri.php#program unggulan">program unggulan</a>
+                <a href="../galeri.php#ekstrakulikuler">ekstrakulikuler</a>
+                <a href="../galeri.php#prestasi">prestasi</a>
+            </div>
+            <div class="footer-section">
+                <h4>All Pages</h4>
+                <a href="../akademik.php">Akademik</a>
+                <a href="../berita.php">Berita</a>
+                <a href="../kontak.php">Kontak</a>
+                <a href="../spmb.php">SPMB</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026, SMP Muhammadiyah Tahfidz. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

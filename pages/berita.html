@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berita - SMP Muhammadiyah (Tahfidz) Salatiga</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="navbar-container">
+            <a href="../index.php" class="navbar-brand">
+                <span><img src="assets/images/logo.png" alt="Logo SMP Muhammadiyah"></span>
+                <span>SMP Muhammadiyah<br>(Tahfidz) Salatiga</span>
+            </a>
+            <button class="nav-toggle">☰</button>
+            <ul class="navbar-menu">
+                <li><a href="../index.php">Beranda</a></li>
+                <li><a href="../akademik.php">Akademik</a></li>
+                <li><a href="../berita.php" class="active">Berita</a></li>
+                <li><a href="../spmb.php">SPMB</a></li>
+                <li><a href="../galeri.php">Galeri</a></li>
+                <li><a href="../kontak.php">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Berita dan Pengumuman</h1>
+            <p>Informasi terbaru mengenai kegiatan dan perkembangan sekolah</p>
+        </div>
+    </section>
+
+    <!-- SEARCH -->
+    <section class="section">
+        <div class="search-box">
+            <input type="text" id="searchNews" placeholder="🔍 Cari berita..." style="padding: 0.75rem 1rem;">
+        </div>
+    </section>
+
+    <!-- BERITA LIST -->
+    <section class="section" style="background-color: #f9fafb;">
+        <h2 class="section-title">Daftar Berita</h2>
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <!-- Grid 2 Kolom (Berita 1-2) -->
+            <div id="newsList-row1" class="cards-grid" style="grid-template-columns: repeat(2, 1fr); margin-bottom: 2rem;">
+                <!-- Berita 1 -->
+                <div class="card">
+                    <div class="card-header" style="background: linear-gradient(135deg, #0052CC 0%, #003D99 100%); color: white; min-height: auto; padding: 0;">
+                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'><rect fill='%230052CC' width='400' height='200'/><text x='50%' y='50%' font-size='20' fill='white' text-anchor='middle' dominant-baseline='middle'>Berita Sekolah</text></svg>" 
+                             alt="Placeholder" style="width: 100%; height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <div class="article-meta">📅 27 Februari 2026 | 👤 Admin</div>
+                        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Rekap Aktivitas Darut Taqwa Camp di Tahun 2026</h3>
+                        <p>
+                            Kegiatan Darut Taqwa Camp merupakan salah satu program unggulan sekolah yang mengajarkan 
+                            nilai-nilai Islami dan kepemimpinan kepada siswa-siswi. Dalam tahun 2026 ini, kegiatan 
+                            berlangsung dengan antusias tinggi dari semua peserta.
+                        </p>
+                        <p style="margin-top: 1rem; color: var(--text-light);">
+                            Program ini dirancang untuk membentuk generasi Islami yang berkarakter, unggul, dan memiliki 
+                            kepedulian tinggi terhadap lingkungan dan masyarakat. Peserta diberikan pengalaman belajar 
+                            langsung tentang kehidupan di pesantren dengan disiplin tinggi dan pembelajaran berkualitas.
+                        </p>
+                        <a href="artikel-darut-taqwa-camp.html" class="btn btn-primary">Baca Selengkapnya →</a>
+                    </div>
+                </div>
+
+                <!-- Berita 2 -->
+                <div class="card">
+                    <div class="card-header" style="background: linear-gradient(135deg, #0052CC 0%, #003D99 100%); color: white; min-height: auto; padding: 0;">
+                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'><rect fill='%2317C' width='400' height='200'/><text x='50%' y='50%' font-size='20' fill='white' text-anchor='middle' dominant-baseline='middle'>Ekstrakurikuler</text></svg>" 
+                             alt="Placeholder" style="width: 100%; height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <div class="article-meta">📅 20 Februari 2026 | 👤 Admin</div>
+                        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Program Ekstrakurikuler Dibuka untuk Semua Siswa</h3>
+                        <p>
+                            SMP Muhammadiyah (Tahfidz) Salatiga menawarkan berbagai pilihan kegiatan ekstrakurikuler 
+                            yang menarik dan edukatif. Mulai dari seni, olahraga, hingga akademik, semua dirancang untuk 
+                            mengembangkan bakat dan kreativitas siswa.
+                        </p>
+                        <p style="margin-top: 1rem; color: var(--text-light);">
+                            Pendaftaran ekstrakurikuler akan dilakukan pada minggu pertama pelaksanaan pembelajaran. 
+                            Para siswa dapat memilih minimal satu dan maksimal dua kegiatan ekstrakurikuler sesuai dengan 
+                            bakat dan minat mereka.
+                        </p>
+                        <a href="artikel-ekstrakurikuler.html" class="btn btn-primary" style="margin-top: 1rem;">Baca Selengkapnya →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid 3 Kolom (Berita 3+) -->
+            <div id="newsList-row2" class="cards-grid" style="grid-template-columns: repeat(3, 1fr);">
+                <!-- Berita 3 -->
+                <div class="card">
+                    <div class="card-header" style="background: linear-gradient(135deg, #0052CC 0%, #003D99 100%); color: white; min-height: auto; padding: 0;">
+                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'><rect fill='%2310B981' width='400' height='200'/><text x='50%' y='50%' font-size='20' fill='white' text-anchor='middle' dominant-baseline='middle'>Pengumuman Penting</text></svg>" 
+                             alt="Placeholder" style="width: 100%; height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <div class="article-meta">📅 15 Februari 2026 | 👤 Admin</div>
+                        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Jadwal Pendaftaran Siswa Baru Tahun Ajaran 2026/2027</h3>
+                        <p>
+                            Pendaftaran siswa baru SMP Muhammadiyah (Tahfidz) Salatiga untuk tahun ajaran 2026/2027 
+                            telah dibuka. Calon siswa dapat melakukan pendaftaran melalui website resmi sekolah dengan 
+                            mengisi formulir pendaftaran online.
+                        </p>
+                        <p style="margin-top: 1rem; color: var(--text-light);">
+                            <strong>Jadwal Pendaftaran:</strong>
+                        </p>
+                        <ul style="list-style-position: inside; margin-top: 0.5rem; color: var(--text-light);">
+                            <li>Pendaftaran Online: 1 Maret - 24 Juni 2026</li>
+                            <li>Tes Akademik: 27 Juni 2026</li>
+                            <li>Tes Wawancara: 30 Juni - 7 Juli 2026</li>
+                            <li>Pengumuman Hasil: 10 Juli 2026</li>
+                        </ul>
+                        <a href="spmb.html" class="btn btn-primary" style="margin-top: 1rem;">Pendaftaran Sekarang →</a>
+                    </div>
+                </div>
+
+                <!-- Berita 4 -->
+                <div class="card">
+                    <div class="card-header" style="background: linear-gradient(135deg, #0052CC 0%, #003D99 100%); color: white; min-height: auto; padding: 0;">
+                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'><rect fill='%23F59E0B' width='400' height='200'/><text x='50%' y='50%' font-size='20' fill='white' text-anchor='middle' dominant-baseline='middle'>Prestasi Siswa</text></svg>" 
+                             alt="Placeholder" style="width: 100%; height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <div class="article-meta">📅 8 Februari 2026 | 👤 Admin</div>
+                        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Siswa SMP Muhammadiyah Raih Prestasi di Kompetisi Tingkat Regional</h3>
+                        <p>
+                            Prestasi gemilang diraih oleh siswa-siswi SMP Muhammadiyah (Tahfidz) Salatiga dalam 
+                            berbagai kompetisi tingkat regional. Mereka berhasil membawa nama sekolah dan daerah dengan 
+                            baik melalui dedikasi dan kerja keras.
+                        </p>
+                        <p style="margin-top: 1rem; color: var(--text-light);">
+                            Pencapaian ini membuktikan bahwa program pendidikan yang diterapkan di sekolah telah 
+                            menghasilkan siswa-siswi yang berprestasi di berbagai bidang, baik akademik maupun non-akademik.
+                        </p>
+                        <a href="artikel-prestasi.html" class="btn btn-primary" style="margin-top: 1rem;">Lihat Daftar Prestasi →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PAGINATION -->
+            <div class="pagination" style="margin-top: 2rem;">
+                <span class="active">1</span>
+                <a href="#page-2">2</a>
+                <span>...</span>
+                <a href="#page-23">23</a>
+                <a href="#page-2">›</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+  /section>
+    <!-- FOOTER -->
+   <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                    <span style="font-size: 2.5rem;"><img src="assets/images/logo.png " alt="Logo SMP Muhammadiyah"></span>
+                    <div style="font-weight: 700; font-size: 0.95rem;">SMP Muhammadiyah<br>(Tahfidz) Salatiga</div>
+                </div>
+                <p>Jl. Cempaka No.5-7, Jetis, Kecamatan Sidorejo, Kota Salatiga, Jawa Tengah 50711.</p>
+                <p style="margin-top: 1.5rem; font-weight: 600;">Follow us on:</p>
+                <div class="social-links">
+                    <a href="https://facebook.com/smpmuhsltg" target="_blank" title="Facebook"><img src="../assets/images/facebook.jpg" alt="facebook"></a>
+                    <a href="https://instagram.com/smpmuhammadiyahsalatiga" target="_blank" title="Instagram"><img src="../assets/images/instagram.jpg" alt="instagram"></a>
+                    <a href="https://www.tiktok.com/@smpmuhammadiyahsalatiga?_r=1&_t=ZS-94X5cuzHFEi" target="_blank" title="TikTok"><img src="../assets/images/tiktok.jpg" alt="tiktok"></a>
+                    <a href="https://youtube.com/@smpmuhammadiyahcempakasala5600?si=3yFSB49Kmfa4EqqA" target="_blank" title="YouTube"><img src="../assets/images/youtube.jpg" alt="youtube"></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="../berita.php">Home</a>
+                <a href="../berita.php#program unggulan">program unggulan</a>
+                <a href="../berita.php#ekstrakulikuler">ekstrakulikuler</a>
+                <a href="../berita.php#prestasi">prestasi</a>
+            </div>
+            <div class="footer-section">
+                <h4>All Pages</h4>
+                <a href="../akademik.php">Akademik</a>
+                <a href="../berita.php">Berita</a>
+                <a href="../kontak.php">Kontak</a>
+                <a href="../spmb.php">SPMB</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026, SMP Muhammadiyah Tahfidz. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

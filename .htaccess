@@ -1,0 +1,37 @@
+# Enable Rewrite Engine
+RewriteEngine On
+RewriteBase /website/
+
+# Redirect static HTML files to PHP versions
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+# Redirect /pages/*.html to root PHP files
+RewriteRule ^pages/akademik\.html$ akademik.php [L,R=301]
+RewriteRule ^pages/berita\.html$ berita.php [L,R=301]
+RewriteRule ^pages/galeri\.html$ galeri.php [L,R=301]
+RewriteRule ^pages/kontak\.html$ kontak.php [L,R=301]
+RewriteRule ^pages/spmb\.html$ spmb.php [L,R=301]
+RewriteRule ^pages/artikel-.*\.html$ artikel.php [L,R=301]
+
+# Redirect index.html to index.php
+RewriteRule ^index\.html$ index.php [L,R=301]
+
+# Security
+<FilesMatch "\.php$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+<FilesMatch "^database\.sql$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "^\.env$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+# Deny directory listing
+Options -Indexes
